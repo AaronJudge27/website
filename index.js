@@ -5,29 +5,26 @@ function setup () {
   createCanvas(500,500);
 };
 function draw () {
-  noStroke();
-  background(0,0,0);
-  //bottom right corner
-  fill(255,180,180);
-  rect(400,400,100,100);
-  fill(45,45,45);
-  ellipse(450,450,100,100);
-  //top left corner
-  fill(255,180,180);
-  rect(0,0,100,100);
-  fill(45,45,45);
-  ellipse(50,50,100,100);
-//top right corner
-  fill(255,180,180);
-  rect(400,0,100,100);
-  fill(45,45,45);
-  ellipse(450,50,100,100);
+  //noStroke();
+  background(255,255,255);
+  // fill(0);
+  // rect(0,0,50,50);
+  // rect(100,0,50,50);
+  // rect(200,0,50,50);
+  // rect(300,0,50,50);
+  // rect(400,0,50,50);
+  // fill(255);
+  // rect(50,0,50,50);
+  // rect(150,0,50,50);
+  // rect(250,0,50,50);
+  // rect(350,0,50,50);
+  // rect(450,0,50,50);
+  fill(0);
+  for (let i = 0; i < 5; i++) {
+    rect(i*100, 0, 50, 50);
+  }
 
-  //bottom left corner
-    fill(255,180,180);
-    rect(0,400,100,100);
-    fill(45,45,45);
-    ellipse(50,450,100,100);
+
 
 };
 // fill(0,255,0);
@@ -47,3 +44,17 @@ function draw () {
 // ellipse(150,250,100,100);
 // ellipse(250,150,100,100);
 // ellipse(250,350,100,100);
+
+//Smiley Face
+// fill(255,255,0);
+// ellipse(250,250,500,500);
+// fill(0,0,0);
+// ellipse(250,325,350,215);
+// ellipse(175,125,50,115);
+// ellipse(325,125,50,115);
+// fill(255,255,0);
+// ellipse(250,300,365,190);
+// fill(0,0,0);
+// triangle(250,213,185,325,315,325);
+// fill(255,255,0);
+// triangle(265,200,203,317,325,317);
