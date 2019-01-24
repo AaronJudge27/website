@@ -1,30 +1,14 @@
 //rgb
 //x,y,w,h
-var player;
+var circleSize = 50;
 function setup () {
   createCanvas(500,500);
 };
 function draw () {
-  //noStroke();
-  background(255,255,255);
-  // fill(0);
-  // rect(0,0,50,50);
-  // rect(100,0,50,50);
-  // rect(200,0,50,50);
-  // rect(300,0,50,50);
-  // rect(400,0,50,50);
-  // fill(255);
-  // rect(50,0,50,50);
-  // rect(150,0,50,50);
-  // rect(250,0,50,50);
-  // rect(350,0,50,50);
-  // rect(450,0,50,50);
-  fill(0);
-  for (let i = 0; i < 5; i++) {
-    rect(i*100, 0, 50, 50);
-  }
-
-
+  noStroke();
+  background(210,55,123);
+  fill(0,128,0);
+  ellipse(250,250,circleSize,circleSize);
 
 };
 // fill(0,255,0);
