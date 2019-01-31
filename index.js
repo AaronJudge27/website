@@ -1,14 +1,37 @@
 //rgb
 //x,y,w,h
-var circleSize = 50;
+var shapeSize = 132;
+var x1 = 0;
+var y1 = 0;
+var x2 = 450;
+var y2 = 0;
+var x3 = 0;
+var y3 = 450;
+var x4 = 450;
+var y4 = 450;
+var s = 0.5;
+
 function setup () {
   createCanvas(500,500);
 };
 function draw () {
-  noStroke();
-  background(210,55,123);
-  fill(0,128,0);
-  ellipse(250,250,circleSize,circleSize);
+  background(230);
+  fill(0);
+  line(0,0,500,500);
+  line(0,500,500,0);
+  fill(255,0,0);
+  rect(x1,y1,50,50);
+  rect(x2,y2,50,50);
+  rect(x3,y3,50,50);
+  rect(x4,y4,50,50);
+  x1+=s;
+  y1+=s;
+  y2+=s;
+  x2-=s;
+  x3+=s;
+  y3-=s;
+  x4-=s;
+  y4-=s;
 
 };
 // fill(0,255,0);
@@ -42,3 +65,19 @@ function draw () {
 // triangle(250,213,185,325,315,325);
 // fill(255,255,0);
 // triangle(265,200,203,317,325,317);
+
+// background(210,55,123);
+// fill(0,0,255);
+// rect(0,0,shapeSize,shapeSize);
+// rect(0,500-shapeSize,shapeSize,shapeSize);
+// rect(500-shapeSize,0,shapeSize,shapeSize);
+// rect(500-shapeSize,500-shapeSize,shapeSize,shapeSize);
+// fill(0,128,0);
+// ellipse(shapeSize/2,shapeSize/2,shapeSize,shapeSize);
+// ellipse(shapeSize/2,500-shapeSize/2,shapeSize,shapeSize);
+// ellipse(500-shapeSize/2,500-shapeSize/2,shapeSize,shapeSize);
+// ellipse(500-shapeSize/2,shapeSize/2,shapeSize,shapeSize);
+// fill(132,132,132);
+// rect(250-shapeSize,250-shapeSize,shapeSize*2,shapeSize*2)
+// fill(255)
+// ellipse(250,250,shapeSize*2,shapeSize*2);
