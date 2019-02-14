@@ -1,39 +1,69 @@
 //rgb
 //x,y,w,h
 var shapeSize = 132;
-var x1 = 0;
-var y1 = 0;
-var x2 = 450;
-var y2 = 0;
-var x3 = 0;
-var y3 = 450;
-var x4 = 450;
-var y4 = 450;
+var ulx = 0;
+var uly = 0;
+var urx = 450;
+var ury = 0;
+var llx = 0;
+var lly = 450;
+var lrx = 450;
+var lry = 450;
+var mlx = 0;
+var mly = 225;
+var lcx = 225;
+var lcy = 450;
+var ucx = 225;
+var ucy = 0;
+var mrx = 450;
+var mry = 225;
 var s = 0.5;
 
 function setup () {
   createCanvas(500,500);
 };
 function draw () {
-  background(230);
+  background(0);
+  noStroke();
+  fill(255,0,0);
+  rect(0,0,500,500);
+  rect(75,75,350,350);
   fill(0);
+  rect(50,50,400,400);
+  fill(255,0,0);
+  rect(125,125,250,250);
+  fill(0);
+  rect(175,175,150,150);
   line(0,0,500,500);
   line(0,500,500,0);
+  line(0,250,500,250);
+  line(250,0,250,500);
   fill(255,0,0);
-  rect(x1,y1,50,50);
-  rect(x2,y2,50,50);
-  rect(x3,y3,50,50);
-  rect(x4,y4,50,50);
-  x1+=s;
-  y1+=s;
-  y2+=s;
-  x2-=s;
-  x3+=s;
-  y3-=s;
-  x4-=s;
-  y4-=s;
+  rect(ulx,uly,50,50);
+  rect(urx,ury,50,50);
+  rect(llx,lly,50,50);
+  rect(lrx,lry,50,50);
+  rect(mlx,mly,50,50);
+  rect(lcx,lcy,50,50);
+  rect(ucx,ucy,50,50);
+  rect(mrx,mry,50,50);
+
+
+  ulx+=s;
+  uly+=s;
+  ury+=s;
+  urx-=s;
+  llx+=s;
+  lly-=s;
+  lrx-=s;
+  lry-=s;
+  mlx+=s;
+  lcy-=s;
+  ucy+=s;
+  mrx-=s;
 
 };
+
 // fill(0,255,0);
 // ellipse(250,250,500,500);
 // fill(0,0,255);
