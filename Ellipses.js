@@ -4,6 +4,7 @@ function drawEllipses () {
   fill(0,255,0);
   ellipse(250,250,500,500);
   fill(0,0,255);
+  ellipse(250,125,500,250);
   fill(255,0,0);
   ellipse(250,375,500,250);
   fill(255,255,255);
