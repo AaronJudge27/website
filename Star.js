@@ -1,7 +1,12 @@
 function drawStar () {
   background(120,120,120)
-  fill(255,105,180);
   noStroke();
-  triangle(0,115,500,115,250,500);
-  triangle(0,385,250,0,500,385);
+  fill(255);
+  ellipse(250,250,500,500);
+  fill(0,0,128);
+  ellipse(250,250,450,450);
+  fill(255);
+  triangle(50,100,450,100,250,500);
+  triangle(50,400,250,0,450,400);
+
 };
